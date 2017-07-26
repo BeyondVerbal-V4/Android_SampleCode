@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener
 
 	private static final String RECORDING_URL = "https://apiv4.beyondverbal.com/v3/recording/";
 
-	private static final String Auth_URL = "https://token.beyondverbal.com/token";//https://token.beyondverbal.com/";//token
+	private static final String Auth_URL = "https://token.beyondverbal.com/token";
 
 
 	private static final String APIKey ="APIKEY_HERE";
@@ -109,9 +109,7 @@ public class MainActivity extends Activity implements View.OnClickListener
 
 	private ResponseHolder postByAction(int buttonId)
 	{
-		//System.setProperty("http.proxyHost", "127.0.0.1");
-		//System.setProperty("http.proxyPort", "8888");
-
+		
 		HttpActivity httpa = new HttpActivity();
 
 		switch (buttonId)
@@ -238,8 +236,6 @@ public class MainActivity extends Activity implements View.OnClickListener
 		statusContent.setText(rs.responseString);
 		if (rs.content != null)
 		{
-			//CharSequence text = responseContentTextView.getText();
-			//responseContentTextView.setText("\n-----------------\n" + rs.content + text);
 			responseContentTextView.append("\n-----------------\n" + rs.content);
 		}
 
