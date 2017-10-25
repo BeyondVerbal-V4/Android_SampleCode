@@ -29,7 +29,7 @@ import java.util.TimerTask;
 public class MainActivity extends Activity implements View.OnClickListener {
     // sets activity members
 
-    private static final String RECORDING_URL = "https://apiv4.beyondverbal.com/v3/recording/";
+    private static final String RECORDING_URL = "https://apiv4.beyondverbal.com/v4/recording/";
     private static final String Auth_URL = "https://token.beyondverbal.com/token";
     private static final String APIKey = "API KEY";
     ResponseHandler responseHand;
